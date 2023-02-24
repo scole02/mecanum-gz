@@ -74,7 +74,7 @@
                             <normal_map>materials/textures/Forklift_Forklift_Normal.png</normal_map>
                             <metalness_map>materials/textures/Forklift_Forklift_Metallic.png</metalness_map>
                             <roughness_map>materials/textures/Forklift_Forklift_Roughness.png</roughness_map>
-                            <environment_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/Reflective table/1/files/materials/textures/DepotEnvMap.dds</environment_map>
+                            <!-- <environment_map>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/Reflective table/1/files/materials/textures/DepotEnvMap.dds</environment_map> -->
                         </metal>
                     </pbr>
                     <!-- fallback to script if no PBR support-->
@@ -302,7 +302,7 @@
                 </limit>
             </axis>
         </joint>
-        <plugin filename="ignition-gazebo-mecanum-drive-system" name="ignition::gazebo::systems::MecanumDrive">
+        <plugin filename="gz-sim-mecanum-drive-system" name="gz::sim::systems::MecanumDrive">
             <front_left_joint>front_left_wheel_joint</front_left_joint>
             <back_left_joint>rear_left_wheel_joint</back_left_joint>
             <front_right_joint>front_right_wheel_joint</front_right_joint>
